@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/eb75260fb3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+  integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/base.css">
+  <title>Yotabyt</title>
+</head>
+
+
+
+<body>
+  <section class="page">
+    <section class="topNav">
+      <logo-tag><span>Yotabyt</span> <i class="material-symbols-outlined">atr</i></logo-tag>
+      <nav>
+        <div>
+          <a href="">Home <small></small></a>
+          <a href="#aboutPage">About <small></small></a>
+          <a href="">Services <small></small></a>
+          <a href="blog.html">Blog <small></small></a>
+        </div>
+        <button>
+          <a href="#contactPage"">Contact Us</a>
+        </button>
+        <p onclick="toggleDarkMode()">
+          <small></small>
+        </p>
+      </nav>
+    </section>
+
+    <section class="headBox">
+      <section class="left">
+        <article>
+          <strong>
+            <span>Empowering Your Business Through</span> <span>Technology.</span>
+          </strong>
+          <small>Welcome to Yotabyt, where innovation meets excellence. We are a dynamic and
+            forward-thinking tech company that is dedicated to providing cutting-edge solutions to businesses of all
+            sizes.</small>
+        </article>
+
+        <div class="tagBox">
+          <span><i class="material-symbols-outlined">bolt</i> <small>Efficiency</small></span>
+          <span><i class="material-symbols-outlined">sync</i> <small>Innovation</small></span>
+          <span><i class="material-symbols-outlined">transform</i> <small>Transformation</small></span>
+        </div>
+
+        <section class="services">
+          <a href="" class="service">
+            <i class="material-symbols-outlined">design_services</i>
+            <span>Graphic Design <small></small></span>
+            <p>We are passionate about creating stunning visuals that tell your unique brand story and captivate your
+              target audience.</p>
+            <sub></sub>
+          </a>
+
+          <a href="" class="service">
+            <i class="material-symbols-outlined">desktop_windows</i>
+            <span>App Development <small></small></span>
+            <p>We are here to turn your vision into a feature-rich and user-friendly web or mobile application.</p>
+            <sub></sub>
+          </a>
+          <a href="" class="service">
+            <i class="material-symbols-outlined">phone_iphone</i>
+            <span>Search Engine Opt. <small></small></span>
+            <p>We help boost your online visibility and outrank the competition with our exceptional SEO services! </p>
+            <sub></sub>
+          </a>
+          <a href="" class="service">
+            <i class="material-symbols-outlined">add_shopping_cart</i>
+            <span>Digital Advertisment <small></small></span>
+            <p>We are a team of skilled marketers who specialize in creating targeted and impactful digital campaigns
+              that drive brand awareness, engagement, and conversions.</p>
+            <sub></sub>
+          </a>
+        </section>
+      </section>
+
+      <section class="right">
+        <div class="phone" style="background-image: url(images/pixel\ 7.png);">
+          <a href="https://alphadinar.github.io/sample/" class="webView" target="_blank">
+            <video src="images/sample.mp4" autoplay muted loop></video>
+            <span>Live Preview <i class="material-symbols-outlined">tv</i></span>
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <hr class="divider" style="margin-bottom: 0;">
+
+    <section class="aboutBoxHolder" id="aboutPage">
+      <section class="aboutBox">
+        <section class="left">
+          <div class="aboutSwiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/head5.JPG" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/head6.JPG" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="right">
+          <p>we specialize in developing advanced web and mobile applications, designing state-of-the-art digital
+            products,
+            and providing top-notch IT consulting services.</p>
+          <div class="tagBox" style="align-items: flex-end;">
+            <span><small>Client-centric</small> <i class="material-symbols-outlined">support_agent</i> </span>
+            <span><small>Reliable</small> <i class="material-symbols-outlined">timer</i> </span>
+            <span><small>Professional</small> <i class="material-symbols-outlined">person_check</i> </span>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <hr class="divider" style="margin-top: 0;">
+
+    <section class="contactBox" id="contactPage">
+      <section class="left">
+        <section>
+          <strong>Make Enquiry <small></small></strong>
+          <form>
+            <div>
+              <span>Name</span>
+              <input type="text">
+            </div>
+            <div>
+              <span>Email</span>
+              <input type="email">
+            </div>
+            <div>
+              <span>Phone</span>
+              <input type="phone" placeholder="optional">
+            </div>
+
+            <button class="material-symbols-outlined">send</button>
+          </form>
+        </section>
+        <hr class="seperator">
+        <section>
+          <div class="linkBox">
+            <a href="tel:+233558420368"><i class="material-symbols-outlined">phone</i><span>+233558420368</span></a>
+            <a href="mailto:yanksone18@yahoo.com"><i
+                class="material-symbols-outlined">mail</i><span>yansksone18@gmail.com</span></a>
+          </div>
+        </section>
+
+      </section>
+
+      <section class="right">
+        <div class="contactSwiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/head.JPG" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/head3.JPG" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/head4.JPG" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <hr class="divider" style="margin-bottom: 0;">
+
+    <footer>
+      <section class="iconBox">
+        <a class="fa-brands fa-twitter"></a>
+        <a class="fa-brands fa-youtube"></a>
+        <a class="fa-brands fa-instagram"></a>
+        <a class="fa-brands fa-facebook"></a>
+        <a class="fa-brands fa-google"></a>
+        <a class="fa-brands fa-linkedin"></a>
+        <a class="fa-brands fa-tiktok"></a>
+        <a class="fa-brands fa-snapchat"></a>
+      </section>
+      <hr>
+      <logo-tag style="color: white;"><span>Yotabyt</span> <i class="material-symbols-outlined">atr</i></logo-tag>
+    </footer>
+
+  </section>
+
+
+
+  
+  
+
+  <script>
+    var aboutSwiper = new Swiper('.aboutSwiper', {
+      loop: true,
+      speed: 1500,
+      autoplay: {
+        delay: 4000
+      }
+    })
+  </script>
+  <script>
+    var contactSwiper = new Swiper('.contactSwiper', {
+      loop: true,
+      effect: 'cube',
+      cubeEffect: {
+        shadow: false,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      speed: 1000,
+      autoplay: {
+        delay: 4000
+      }
+    })
+  </script>
+
+
+  <script src="js/animations.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
+</style>

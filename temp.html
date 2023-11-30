@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/eb75260fb3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="page">
+    <section class="topNav">
+      <logo-tag><span>dp</span> <i class="material-symbols-outlined">atr</i></logo-tag>
+      <nav>
+        <div>
+          <a href="">Home <small></small></a>
+          <a href="#aboutPage">About <small></small></a>
+          <a href="">Services <small></small></a>
+          <a href="">Blog <small></small></a>
+        </div>
+        <button>
+          <a href="#contactPage"">Contact Us</a>
+        </button>
+        <p onclick=" toggleDarkMode()">
+            <small></small>
+            </p>
+      </nav>
+    </section>
+
+    <section class="blogBox">
+      <header>
+        <strong>Blog</strong>
+        <small>This is a blog page</small>
+      </header>
+      <section class="posts">
+        <section class="postBlock">
+          <section>
+            <div class="post post2">
+              <article>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                <a href="">Read More</a>
+              </article>
+            </div>
+          </section>
+          <section>
+            <div class="post post1">
+              <article>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                <a href="">Read More</a>
+              </article>
+            </div>
+            <div class="post post1">
+              <article>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                <a href="">Read More</a>
+              </article>
+            </div>
+          </section>
+        </section>
+        <section class="postBlock">
+          <section>
+            <div class="post post1">
+              <article>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                <a href="">Read More</a>
+              </article>
+            </div>
+            <div class="post post1">
+              <article>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                <a href="">Read More</a>
+              </article>
+            </div>
+          </section>
+          <section>
+            <div class="post post2">
+              <article>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                <a href="">Read More</a>
+              </article>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <style>
+    :root{
+      --post-gap : 10px;
+    }
+
+    .posts {
+      display: flex;
+      gap: var(--post-gap);
+    }
+
+    .post {
+      background-image: url(images/ama.jpg);
+      background-position: center;
+      background-size: cover;
+      padding: 20px;
+      display: flex;
+      align-items: flex-end;
+    }
+    .post p{
+      display: none;
+    }
+    .blogBox {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem 0;
+      margin: auto;
+    }
+
+    .blogBox header {
+      display: flex;
+      flex-direction: column;
+      color: var(--color);
+    }
+
+    .blogBox header strong {
+      font-size: 2.5rem;
+    }
+
+    .postBlock {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: var(--post-gap);
+    }
+    .postBlock section{
+      display: flex;
+      gap: var(--post-gap);
+    }
+    .post1{
+      width: calc(50% - 45px);
+      height: calc(400px - 40px);
+      border-radius: var(--post-gap);
+    }
+    .post2{
+      width: calc(100% - 40px);
+      height: calc(250px - 40px);
+      border-radius: var(--post-gap);
+    }
+    .post span{
+      font-size: 1.5rem;
+      color: white;
+    }
+    .post article{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .post a{
+      background: var(--color);
+      color: var(--primary-text);
+      padding: 10px;
+      border-radius: 3px;
+    }
+
+  </style>
+
+  <button>ADD</button>
+  <script src="js/animations.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDKbmFG0NFdZvPyyBHVIuJitJJmdnehn4o",
+    authDomain: "smarthotel-7d5d0.firebaseapp.com",
+    projectId: "smarthotel-7d5d0",
+    storageBucket: "smarthotel-7d5d0.appspot.com",
+    messagingSenderId: "403532820903",
+    appId: "1:403532820903:web:0f193e530b955473aa8682",
+    measurementId: "G-VXJVCW70SD"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  import { getDatabase, ref, set, get, child, update, remove } from
+    "https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js"
+  const db = getDatabase();
+
+  console.log(db)
+
+  const add = document.querySelector('button')
+  const posts = document.querySelector('.posts')
+  const postBlock1 = document.querySelectorAll('.postBlock section')[0]
+  const postBlock2 = document.querySelectorAll('.postBlock section')[0]
+
+  add.onclick = () => {
+    addPost()
+  }
+
+  const addPost = () => {
+    set(ref(db, "Posts/" + 'second_post'), {
+      title: 'first Post',
+      description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae odit dolore non soluta perspiciatis quis et quidem aut eum recusandae. Dolores doloremque beatae laudantium ducimus in facilis culpa quam tempore.',
+      posted_on: String(new Date())
+    })
+      .then(() => { console.log('s') })
+      .catch((error) => { console.log(error) })
+  }
+
+  const getAllPosts = () => {
+    var dbRef = ref(db)
+    get(child(dbRef, "Posts/"))
+      .then((objs) => {
+        objs.forEach((obj) => {
+          console.log(obj)
+          
+        })
+      })
+  }
+
+  getAllPosts()
+
+
+
+</script>

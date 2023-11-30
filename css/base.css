@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+  --bg : white;
+  --color : black;
+  --primary-text : white;
+  --theme : #00082a;
+  --service-scale : #00082a;
+  --secondary : #AEB2BA;
+  --service : #468efa;
+  --send : rgb(22, 189, 106);
+}
+
+
+@font-face {
+  font-family: 'DessauProDrei';
+  src: url('DessauProDrei.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+logo-tag{
+  display: flex;
+  color: var(--color);
+  align-items: flex-start;
+  color: var(--send);
+}
+logo-tag span{
+  font-size: 3rem;
+  font-family: 'DessauProDrei';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  /* overflow-x: hidden !important; */
+  background: var(--bg);
+}
+/* .page{
+
+} */
+
+.divider {
+  width: 100%;
+  margin: 8vh auto;
+  border-top: 2px dotted var(--color);
+}
+.seperator {
+  height: 100%;
+  border-right: 2px dotted var(--color);
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+  border-radius: 10px;
+  background: var(--bg);
+}
+body::-webkit-scrollbar-thumb{
+  background: #00082a;
+  border-radius: 8px;
+}

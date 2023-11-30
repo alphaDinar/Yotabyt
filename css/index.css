@@ -1,0 +1,520 @@
+.topNav,
+.headBox,
+.aboutBox,
+.contactBox {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topNav {
+  margin: 5vh 10%;
+  align-items: center;
+}
+
+.headBox,
+.aboutBox,
+.contactBox {
+  margin: auto;
+}
+
+.aboutBoxHolder{
+  width: 100%;
+  padding:  5vh 0;
+  background-position: center;
+  background-size: cover;
+  background: black;
+}
+.aboutBox {
+  gap: 0 5%;
+}
+
+.topNav strong {
+  font-size: 1.5rem;
+  color: var(--color);
+}
+
+.topNav nav {
+  display: flex;
+  gap: 0 3rem;
+  align-items: center;
+}
+
+.topNav nav div a {
+  font-size: 1.05rem;
+  color: var(--color);
+}
+
+.topNav nav div a small {
+  display: block;
+  width: 5px;
+  height: 5px;
+  transition: 0.3s ease;
+  opacity: 0;
+  background: var(--theme);
+}
+
+.topNav nav div a:hover small {
+  opacity: 1;
+  width: 100%;
+}
+
+.topNav nav div {
+  display: flex;
+  gap: 0 1rem;
+}
+
+.topNav nav button {
+  background: var(--color);
+  color: var(--primary-text);
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.topNav nav button a {
+  color: var(--primary-text);
+}
+
+.topNav p {
+  width: 70px;
+  height: 30px;
+  border-radius: 40px;
+  border: 2px solid var(--color);
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+
+.topNav p small {
+  height: 28px;
+  width: 28px;
+  background: var(--color);
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1%;
+  transition: 0.3s ease;
+}
+
+.topNav p small.dark {
+  left: calc(98% - 28px);
+}
+
+.headBox .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.headBox .left strong {
+  font-size: 4rem;
+}
+
+.headBox .left strong span:nth-child(1) {
+  color: var(--color);
+}
+
+.headBox .left strong span:nth-child(2) {
+  color: var(--secondary);
+}
+
+.headBox .left article {
+  display: flex;
+  flex-direction: column;
+}
+
+.headBox .left article small {
+  max-width: 700px;
+  color: var(--color);
+}
+
+.tagBox {
+  display: flex;
+  flex-direction: column;
+  color: var(--color);
+  color: var(--secondary);
+  color: var(--send);
+  gap: 0.5rem 0;
+}
+
+.tagBox span {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5rem;
+}
+
+.tagBox span i {
+  font-size: 1.5rem;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.service {
+  width: 180px;
+  padding: 20px;
+  height: 160px;
+  background: var(--service);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.3rem 0;
+  color: var(--primary-text);
+  position: relative;
+  overflow: hidden;
+}
+
+.service sub {
+  display: block;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background: var(--service-scale);
+  position: absolute;
+  right: 20px;
+  z-index: 5;
+  transition: 0.5s ease;
+}
+
+.service:hover sub {
+  scale: 50;
+}
+
+.service i {
+  color: var(--primary-text);
+}
+
+.service span small {
+  display: block;
+  height: 3px;
+  width: 30%;
+  background: var(--primary-text);
+  z-index: 20;
+}
+
+.service p {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  height: 100px;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.service i,
+.service span,
+.service span small,
+.service p {
+  z-index: 10;
+}
+
+.phone {
+  width: 300px;
+  height: 600px;
+  padding: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webView {
+  width: 88%;
+  height: 570px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.webView span{
+  background: rgba(30, 28, 28, 0.521);
+  color: wheat;
+  display: flex;
+  padding: 10px;
+  border-radius: 3px;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.webView video {
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.aboutSwiper {
+  width: 700px;
+}
+
+.aboutBox .left img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.aboutBox .right {
+  text-align: right;
+  display: flex;
+  gap: 2rem 0;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.aboutBox .right h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.aboutBox .right p {
+  /* color: var(--color); */
+  color: white;
+  background: black;
+}
+
+.contactBox .left {
+  display: flex;
+  gap: 0 3rem;
+  align-items: center;
+}
+
+.contactBox .left strong {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color);
+}
+
+.contactBox .left strong small {
+  display: block;
+  height: 5px;
+  width: 40%;
+  background: var(--color);
+}
+
+.contactBox .left section,
+.contactBox .left form,
+.contactBox .left form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactBox .left section {
+  gap: 2rem 0;
+}
+
+.contactBox .left form {
+  gap: 1rem 0;
+  align-items: flex-start;
+}
+
+.contactBox .left form div {
+  gap: 0.3rem 0;
+  color: var(--color);
+}
+
+.contactBox .left form button {
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: var(--send);
+  margin: 1rem 0;
+  color: white;
+  cursor: pointer;
+}
+
+.contactBox .left form input {
+  background: whitesmoke;
+  height: 30px;
+  padding: 5px 15px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.contactBox .left .linkBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+}
+
+.contactBox .left .linkBox a {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5rem;
+  background: var(--color);
+  padding: 10px;
+  color: var(--primary-text);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.contactSwiper {
+  width: 400px;
+  height: 400px;
+}
+
+.contactSwiper img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+footer {
+  background: black;
+  min-height: 30vh;
+  width: 80%;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 0;
+}
+footer .iconBox{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer .iconBox a{
+  color: var(--send);
+  font-size: 2rem;
+}
+
+@media all and (max-width:1550px) {
+
+  .topNav,
+  .headBox,
+  .aboutBox,
+  .contactBox {
+    width: 90%;
+  }
+
+  .topNav {
+    margin: 5vh 5%;
+  }
+}
+
+@media all and (max-width:1380px) {
+
+  .headBox,
+  .aboutBox {
+    gap: 3rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutBox {
+    flex-direction: column-reverse;
+  }
+
+  .headBox .left,
+  .aboutBox .right {
+    gap: 2rem 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headBox .left article {
+    align-items: center;
+    gap: 1rem 0;
+  }
+
+  .headBox .left article strong {
+    font-size: 7vw;
+  }
+
+  .services {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .service span small {
+    width: 100%;
+  }
+}
+
+@media all and (max-width:1200px) {
+  .contactBox {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem 0;
+  }
+}
+
+@media all and (max-width:750px) {
+  .topNav {
+    flex-direction: column;
+  }
+
+  .topNav nav {
+    gap: 1rem 0;
+    flex-direction: column;
+  }
+
+  .aboutBox .left, .contactBox .left {
+    width: 100%;
+  }
+  .contactBox .left{
+    flex-direction: column;
+  }
+  .contactBox .left strong{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactBox .left form{
+    align-items: center;
+  }
+
+  .contactSwiper{
+    width: 300px;
+    height: 200px;
+  }
+
+  .aboutSwiper {
+    width: 80%;
+  }
+
+}
+
+@media all and (max-width:500px) {
+  .headBox {
+    gap: 0rem 0;
+  }
+
+  .headBox .right {
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .aboutBox .right .tagBox{
+    align-items: center !important;
+  }
+
+  .phone {
+    scale: 0.8;
+  }
+  .contactSwiper{
+    width: 250px;
+    height: 150px;
+  }
+}
+
+@media all and (max-width:300px) {
+  .phone {
+    display: none;
+  }
+}
