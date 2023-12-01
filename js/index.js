@@ -16,6 +16,46 @@ const setLightTheme = () => {
   rootStyles.setProperty('--service-scale', '#00082a');
 }
 
+const topNav = document.querySelector('.topNav');
+
+topNav.innerHTML = `
+      <logo-tag><span>Yotabyt</span> <i class="material-symbols-outlined">atr</i></logo-tag>
+      <nav>
+        <div>
+          <a href="/">Home <small></small></a>
+          <a href="#aboutPage">About <small></small></a>
+          <a href="">Services <small></small></a>
+          <a href="team.html">Team <small></small></a>
+        </div>
+        <button>
+          <a href="#contactPage"">Contact Us</a>
+        </button>
+        <p onclick="toggleDarkMode()">
+          <small></small>
+        </p>
+      </nav>
+`
+
+const footer = document.querySelector('footer');
+
+if(footer){
+  footer.innerHTML = `
+      <section class="iconBox">
+          <a class="fa-brands fa-twitter"></a>
+          <a class="fa-brands fa-youtube"></a>
+          <a class="fa-brands fa-instagram"></a>
+          <a class="fa-brands fa-facebook"></a>
+          <a class="fa-brands fa-google"></a>
+          <a class="fa-brands fa-linkedin"></a>
+          <a class="fa-brands fa-tiktok"></a>
+          <a class="fa-brands fa-snapchat"></a>
+        </section>
+        <hr>
+      <logo-tag style="color: white;"><span>Yotabyt</span> <i class="material-symbols-outlined">atr</i></logo-tag>
+  `
+}
+
+
 const toggleTab = document.querySelector('.topNav p small')
 const toggleDarkMode = () => {
   if (!toggleTab.classList.contains('dark')) {
@@ -37,4 +77,5 @@ if (sessionStorage.getItem('mode')) {
     setDarkTheme()
   }
 }
+
 

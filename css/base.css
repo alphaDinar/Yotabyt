@@ -19,6 +19,10 @@
   font-style: normal;
 }
 
+h1{
+  font-family: 'DessauProDrei';
+}
+
 logo-tag{
   display: flex;
   color: var(--color);
@@ -40,12 +44,9 @@ logo-tag span{
   scroll-behavior: smooth;
 }
 body{
-  /* overflow-x: hidden !important; */
   background: var(--bg);
 }
-/* .page{
 
-} */
 
 .divider {
   width: 100%;

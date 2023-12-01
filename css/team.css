@@ -1,0 +1,103 @@
+.teamBox {
+  width: 90%;
+  padding: 0 5% 5vh 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  color: var(--color);
+}
+
+.teamBox h3 {
+  font-size: 1.4rem;
+}
+
+.teamBox sub {
+  width: 100%;
+  border-top: 4px solid var(--color);
+  display: block;
+}
+
+.teamBox section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.teamBox a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  justify-content: center;
+  transition: 0.3s ease;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.teamBox a img {
+  width: 230px;
+  /* padding: 15px; */
+  /* border: 1px solid var(--color); */
+  height: 350px;
+  object-fit: cover;
+  background: white;
+  transition: 0.3s ease;
+  border-radius: 150px;
+}
+
+.teamBox a:hover img {
+  border-radius: 150px 150px 100px 100px;
+}
+
+.teamBox a article {
+  background: var(--color);
+  display: flex;
+  gap: 0.2rem;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary-text);
+  transition: 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.teamBox a:hover article i{
+  scale: 50;
+}
+.teamBox a:hover article strong,  .teamBox a:hover article span{
+  color: black;
+}
+
+.teamBox a article i {
+  background: wheat;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  position: absolute;
+  transition: 0.4s ease;
+  top: 5px;
+  left: 5px;
+  border-radius: 3px;
+}
+.teamBox a article strong, .teamBox a article span{
+  z-index: 2;
+}
+
+@media all and (max-width:750px) {
+  .teamBox {
+    align-items: center;
+  }
+}
+
+@media all and (max-width:1300px) {
+  .teamBox section {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

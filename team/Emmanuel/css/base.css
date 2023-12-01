@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'DessauProDrei';
+  src: url('DessauProDrei.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+h1{
+  font-family: 'DessauProDrei';
+  font-weight: 400;
+}
+
+:root{
+  --theme : #fbda69;
+  --button : #8673e9;
+  --primary: rgb(106, 106, 106)
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+body::-webkit-scrollbar{
+  width: 10px;
+  background: black;
+  /* background: transparent; */
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  background: var(--theme);
+  border-radius: 10px;
+}
+
+.topNav,.headBox,.serviceBox,.skillBox,.projectBox,footer{
+  width: 80%;
+  padding: 3vh 10%;
+}
+.serviceBox,.skillBox,.projectBox{
+  margin-top: 8vh;
+}
+
+@media all and (max-width:1050px){
+  .serviceBox,.skillBox,.projectBox{
+    margin-top: 1vh;
+  }
+}
+@media all and (max-width:500px){
+  .topNav,.headBox,.serviceBox,.skillBox,.projectBox{
+    padding: 1vh 10%;
+  }
+}
