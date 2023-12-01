@@ -33,6 +33,18 @@ logo-tag span{
   font-size: 3rem;
   font-family: 'DessauProDrei';
 }
+logo-tag i{
+  animation: wind 3s linear infinite;
+}
+@keyframes wind {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 * {
   margin: 0;

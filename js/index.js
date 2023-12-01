@@ -19,7 +19,7 @@ const setLightTheme = () => {
 const topNav = document.querySelector('.topNav');
 
 topNav.innerHTML = `
-      <logo-tag><span>Yotabyt</span> <i class="material-symbols-outlined">atr</i></logo-tag>
+      <logo-tag><span>yotabyt</span> <i class="material-symbols-outlined">atr</i></logo-tag>
       <nav>
         <div>
           <a href="/">Home <small></small></a>
@@ -51,7 +51,7 @@ if(footer){
           <a class="fa-brands fa-snapchat"></a>
         </section>
         <hr>
-      <logo-tag style="color: white;"><span>Yotabyt</span> <i class="material-symbols-outlined">atr</i></logo-tag>
+      <logo-tag style="color: white;"><span>yotabyt</span> <i class="material-symbols-outlined">atr</i></logo-tag>
   `
 }
 

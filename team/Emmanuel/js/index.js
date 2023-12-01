@@ -5,7 +5,7 @@ const projectLink = 'index.html#projectBox';
 topNav.innerHTML = `
   <div>
   <a href='/' style="color:black">
-  <h1>Yotabyt</h1>
+  <h1>yotabyt</h1>
   </a>
   <i class="material-symbols-outlined" style="color: rgb(135, 135, 135);">atr</i>
   </div>
