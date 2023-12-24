@@ -25,7 +25,6 @@ topNav.innerHTML = `
           <a href="/">Home <small></small></a>
           <a href="#aboutPage">About <small></small></a>
           <a href="">Services <small></small></a>
-          <a href="team.html">Team <small></small></a>
         </div>
         <button>
           <a href="#contactPage"">Contact Us</a>
